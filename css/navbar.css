@@ -9,7 +9,7 @@ header{
   color: white;
 }
 
-header  ul,
+header  menu,
 header li{
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +17,7 @@ header li{
   gap: 20px;
 }
 
-header ul, 
+header menu, 
 header li, 
 header a{
   color: white;

@@ -17,27 +17,15 @@
   background-color: #2F2FA2;
   display: flex;
   flex-wrap: wrap;
-}
-
-.presentation-gauche{
-  flex: 1 0 60%;
-  min-height: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.presentation-droite{
-  flex: 1 0 40%;
-  min-height: 100%;
-  display: flex;
-  justify-content: start;
-  margin-top: 130px;
   color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 
-.presentation-gauche img{
-  max-width: 70%;
+.presentation-container img{
+  width: 50%;
+  max-width: 870px;
 }
 
 /* wave container avec le titre de service proposé */
@@ -60,6 +48,10 @@
 }
 
 /* service proposé */
+
+.service-title{
+  display: none;
+}
 
 .service{
   display: flex;
@@ -114,7 +106,7 @@
 
 .portfolio h2{
   padding: 50px;
-  font-size: clamp(1rem, 0.5962rem + 1.7949vw, 2.75rem);
+  font-size: clamp(1.625rem, 1.2778rem + 1.8519vw, 3.5rem);
 }
 
 .portfolio-container{
@@ -146,6 +138,7 @@
 
 .portfolio img{
   width: 100%;
+  border-radius: 12px;
 }
 
 .portfolio-box-description{
@@ -282,4 +275,54 @@
   text-decoration: none;
   color: white;
   border-radius: 10px;
+}
+
+/* responcive */
+
+@media screen and (max-width: 1049px) {
+
+  /* menu */
+
+  header h1{
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav menu{
+    display: none;
+  }
+
+  /* presentation */
+
+  .presentation-container{
+    gap: 0px;
+  }
+  .presentation-container h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0px 20px;
+  }
+
+  .presentation-container img{
+    width: 50%;
+    max-width: 870px;
+    min-width: 260px;
+  }
+
+  /* wave container */
+  .wave-container h2 {
+    display: none;
+  }
+  .service-title{
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    font-size: clamp(1.625rem, 1.375rem + 1.3333vw, 2.25rem);
+  }
+
+  /* portfiolo */
+  .portfolio h2{
+    padding: 50px 0px;
+    text-align: center;
+  }
 }
