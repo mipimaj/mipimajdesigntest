@@ -1,40 +1,52 @@
 footer{
   margin-top: 50px;
   width: 100%;
-  min-height: 200px;
+  min-height: 100px;
   height: auto;
   background-color: #1e2024;
 }
 
 .footer-container{
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   height: 100%
 }
 
 .footer-gauche{
-  flex: 1 0 50%;
-  min-height: 200px;
+  padding: 50px 0px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   color: white;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.footer-gauche div{
+  display: flex;
+  gap: 15px;
 }
 
 .footer-droite{
-  flex: 1 0 50%;
-  min-height: 200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 20px 0px;
+  flex-wrap: wrap;
   color: white;
-  gap: 40px;
+  align-items: center;
+  gap: 30px;
+  padding-right: 20px;
 }
 
 .mention-legal {
+  min-width: max-content;
   display: flex;
   gap: 5px;
   flex-direction: column;
+}
+
+.mention-legal h2{
+  font-size: 16px;
 }
 
 .mention-legal li,

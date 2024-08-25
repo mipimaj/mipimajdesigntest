@@ -28,6 +28,12 @@
   max-width: 870px;
 }
 
+.presentation-container div{
+  min-width: 250px;
+  max-width: 550px;
+  width: auto;
+}
+
 /* wave container avec le titre de service proposé */
 
 .wave-container{
@@ -299,7 +305,12 @@
   }
   .presentation-container h2{
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
+    padding: 0px 20px;
+  }
+
+  .presentation-container p{
+    margin-bottom: 20px;
     padding: 0px 20px;
   }
 
