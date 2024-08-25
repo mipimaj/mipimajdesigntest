@@ -13,12 +13,10 @@
 
 /* Présentation du site | Acceuil premier plan */
 
-.presentation{
-}
-
 .presentation-container{
   background-color: #2F2FA2;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .presentation-gauche{
@@ -65,6 +63,7 @@
 
 .service{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   margin-top: 50px;
@@ -80,8 +79,11 @@
   align-items: center;
   text-align: center;
   border-radius: 32px;
-  border: solid 2px black;
+  padding: 18px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+/* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 
 .service-container a{
   color: white;
@@ -162,10 +164,12 @@
 
 .contact-container{
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .contact-gauche{
-  flex: 1 0 50%;
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -176,12 +180,13 @@
   width: 100%;
   margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
 }
 
 .contact-info-box{
-  width: 200px;
+  width: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,7 +198,7 @@
 }
 
 .contact-droite{
-  flex: 1 0 50%;
+  
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -203,7 +208,7 @@
 .contact-devis-box{
   display: flex;
   flex-direction: column;
-  width: 350px;
+  max-width: 350px;
   margin-top: 0px;
 }
 
