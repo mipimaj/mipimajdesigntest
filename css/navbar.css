@@ -9,6 +9,10 @@ header{
   color: white;
 }
 
+header p{
+  font-size: 30px;
+}
+
 header  menu,
 header li{
   display: flex;
