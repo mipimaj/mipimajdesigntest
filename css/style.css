@@ -1,4 +1,4 @@
-@charset "UTF-8";@import "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap";.wallet__item::before,.create__item::before,.create__preview .nft__box::before,.app__wrapper::before,.subscribe__wrapper::before,.features__item::before,.collection__item::before,.bid__item::before,.seller__item::after,.seller__item::before {
+@charset "UTF-8";@import "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap";.wallet__item::before,.create__item::before,.create__preview .nft__box::before,.app__wrapper::before,.subscribe__wrapper::before,.features__item::before,.collection__item::before,.bid__item::before,.seller__item::after,.seller__item::before {
   position: absolute;
   content: ""
 }
