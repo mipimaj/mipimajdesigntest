@@ -13,7 +13,7 @@ header p{
   font-size: 30px;
 }
 
-header  menu,
+header  ul,
 header li{
   display: flex;
   flex-wrap: wrap;
@@ -21,7 +21,7 @@ header li{
   gap: 20px;
 }
 
-header menu, 
+header ul, 
 header li, 
 header a{
   color: white;

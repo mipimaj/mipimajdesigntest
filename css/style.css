@@ -65,6 +65,10 @@
   gap: 40px;
 }
 
+.service h3{
+  font-size: 24px;
+}
+
 .service-container{
   width: 300px;
   display: flex;
@@ -119,6 +123,10 @@
 .avantage > div{
   display: flex;
   justify-content: center;
+}
+
+.avantage h3{
+  font-size: 20px;
 }
 
 .avantage-container{
@@ -349,7 +357,7 @@
     text-align: center;
   }
 
-  header nav menu{
+  header nav ul{
     display: none;
   }
 
