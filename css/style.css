@@ -11,7 +11,16 @@
   font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+body{
+  width: 100%;
+  
+}
+
 /* Présentation du site | Acceuil premier plan */
+
+.presentation{
+  overflow-x: hidden;
+}
 
 .presentation-container{
   background-color: #2F2FA2;
@@ -42,8 +51,7 @@
 
 .wave-container img{
   margin-top: -1px;
-  width: 101%;
-  margin-left: -1%;
+  width: 110%;
   overflow-x: hidden;
 }
 
