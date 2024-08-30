@@ -55,7 +55,8 @@
 
 .service-title{
   padding: 100px 50px;
-  font-size: clamp(1.625rem, 1.2778rem + 1.8519vw, 3.5rem);
+  font-size: clamp(1.25rem, 1.0192rem + 1.0256vw, 2.25rem);
+  text-align: center;
 }
 
 .service{
@@ -78,8 +79,6 @@
   align-items: center;
   text-align: center;
   border-radius: 32px;
-  padding: 18px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .service-container div{
@@ -93,7 +92,32 @@
 
 /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 
-.service-container a{
+.prestation-container{
+  
+}
+
+.prestation-box{
+  margin: 0px 20px;
+  border-radius: 16px;
+  min-width: 300px;
+  max-width: 1000px;
+  padding: 20px;
+  background-color: #cccccc80;
+}
+
+.prestation-box > h3{
+  color: #2F2FA2;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.prestation-description{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prestation-container a{
   color: white;
   text-decoration: none;
   background-color: black;
@@ -101,19 +125,13 @@
   padding: 10px;
 }
 
-.service-container hr{
-  width: 90%;
-  height: 2px;
-  border-radius: 20px;
-  background-color: grey;
-}
-
 /* avantage */
 
 .avantage-titre{
   padding: 100px 50px;
   padding-top: 0px;
-  font-size: clamp(1.625rem, 1.2778rem + 1.8519vw, 3.5rem);
+  font-size: clamp(1.25rem, 1.0192rem + 1.0256vw, 2.25rem);
+  text-align: center;
 }
 
 .avantage{
@@ -166,52 +184,71 @@
   height: 85%;
 }
 
-/* Portfolio */
+/* faq */
 
-.portfolio{
+.faq{
   color: black;
   background-color: #e9ecf5;
 }
 
-.portfolio h2{
-  padding: 50px;
-  font-size: clamp(1.625rem, 1.2778rem + 1.8519vw, 3.5rem);
-}
-
-.portfolio-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 50px;
-  margin: 0px 3%;
-  gap: 40px;
-}
-
-.portfolio-box{
-  text-decoration: none;
-  color: black;
-  width: 450px;
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
+.faq h2{
   text-align: center;
-  border-radius: 16px;
-  padding: 20px 0px;
+  padding: 50px;
+  font-size: clamp(1.25rem, 1.0192rem + 1.0256vw, 2.25rem);
 }
 
-.portfolio-box-titre{
-  text-align: start;
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 
-.portfolio img{
+.faq-item {
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  font-size: 16px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  border-radius: 12px;
+  padding: 10px 20px;
+  background-color: #cccccc80;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
 }
 
-.portfolio-box-description{
-  text-align: start;
+.faq-hr{
+  border: solid 1px rgba(128, 128, 128, 0.308);
+  margin-bottom: 10px;
+}
+
+.faq-question .symbol {
+  margin-right: 10px;
+}
+
+.symbol{
+  font-size: 18px;
+}
+
+.faq-answer {
+  font-size: 14px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 20px;
+  background-color: #cccccc80;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 /* Contact */
@@ -406,7 +443,7 @@
   }
 
   /* portfiolo */
-  .portfolio h2{
+  .faq h2{
     padding: 50px 0px;
     text-align: center;
   }
