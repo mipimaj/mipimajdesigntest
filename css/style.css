@@ -40,15 +40,11 @@
 
 /* wave container avec le titre de service proposé */
 
-.wave-container{
-  position: relative;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-}
-
 .wave-container img{
   margin-top: -1px;
+  width: 101%;
+  margin-left: -1%;
+  overflow-x: hidden;
 }
 
 /* service proposé */
@@ -208,7 +204,7 @@
 
 .faq-question {
   color: black;
-  font-size: 16px;
+  font-size: 17px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   display: flex;
